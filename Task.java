@@ -18,18 +18,40 @@ public class Task implements Serializable {
         this.done = false;
     }
 
-    public int getId() { return id; }
-    public String getTitle() { return title; }
-    public String getDesc() { return desc; }
-    public LocalDate getDate() { return date; }
-    public int getPriority() { return priority; }
-    public boolean isDone() { return done; }
+    public int getId() {
+        return id;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public String getDesc() {
+        return desc;
+    }
+    public LocalDate getDate() {
+        return date;
+    }
+    public int getPriority() {
+        return priority; 
+    }
+    public boolean isDone() {
+        return done;
+    }
 
-    public void setTitle(String title) { this.title = title; }
-    public void setDesc(String desc) { this.desc = desc; }
-    public void setDate(LocalDate date) { this.date = date; }
-    public void setPriority(int priority) { this.priority = priority; }
-    public void setDone(boolean done) { this.done = done; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+    public void setDone(boolean done) {
+        this.done = done;
+    }
 
     @Override
     public String toString() {
@@ -37,3 +59,4 @@ public class Task implements Serializable {
                 id, title, desc, date, priority, done ? " Выполнена" : " В процессе");
     }
 }
+
