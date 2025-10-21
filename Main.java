@@ -64,7 +64,7 @@ public class Main {
                     m.find(w);
                 }
                 case 0 -> {
-                    System.out.println("До свидания!");
+                    System.out.println("Вы завершил работу!");
                     return;
                 }
                 default -> System.out.println("Неверный выбор!");
@@ -72,4 +72,5 @@ public class Main {
         }
     }
 }
+
 
