@@ -62,9 +62,13 @@ public class TaskManager {
 
     public void find(String word) {
         list.stream()
-                .filter(t -> t.getTitle().toLowerCase().contains(word.toLowerCase())
-                        || t.getDesc().toLowerCase().contains(word.toLowerCase()))
-                .forEach(System.out::println);
+            .filter(t ->
+                t.getTitle().toLowerCase().contains(word.toLowerCase()) ||
+                t.getDesc().toLowerCase().contains(word.toLowerCase()) ||
+                t.getDate().toString().contains(word) ||
+                String.valueOf(t.getPriority()).equals(word)
+            )
+            .forEach(System.out::println);
     }
 
     private void save() {
@@ -87,3 +91,4 @@ public class TaskManager {
         }
     }
 }
+
