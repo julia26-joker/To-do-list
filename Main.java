@@ -14,7 +14,7 @@ public class Main {
             System.out.println("4. Удалить задачу");
             System.out.println("5. Отметить как выполненную");
             System.out.println("6. Сортировать по дате");
-            System.out.println("7. Поиск по слову");
+            System.out.println("7. Поиск по атрибуту");
             System.out.println("0. Выйти");
             System.out.print("Выберите действие: ");
 
@@ -59,7 +59,7 @@ public class Main {
                 }
                 case 6 -> m.sortByDate();
                 case 7 -> {
-                    System.out.print("Введите слово: ");
+                    System.out.print("Введите атрибут: ");
                     String w = sc.nextLine();
                     m.find(w);
                 }
@@ -72,3 +72,4 @@ public class Main {
         }
     }
 }
+
